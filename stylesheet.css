@@ -1,4 +1,21 @@
-p{
-    font-size: 20px;
-    font-family: Impact;
+body{
+    background-color: #ccc;
+    color: #333;
+    font-family: "Helvetica", "Arial", "serif";
+}
+
+h1{
+    color: #333;
+    background-color: transparent;
+    margin: 20px;
+}
+
+a{
+    color: #c60;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body>p{
+    font-family: "American Typewriter";
 }

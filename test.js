@@ -10,6 +10,13 @@ function Person(name, age) {
     }
 }
 
+function Dog() {
+    this.meow = function (name) {
+        console.log("meow" + name.toString());
+    }
+}
+
+
 var yellowPerson = new Person();
 
 var figure = yellowPerson.getSpecies();
@@ -17,11 +24,20 @@ var figure = yellowPerson.getSpecies();
 console.log(figure);
 
 
-Person.prototype.add = function (name) {
-    console.log(name.toString());
+Person.prototype.add = function () {
+    console.log(this.species);
 }
 
 yellowPerson.add("test");
 
 var bool =  yellowPerson.isPrototypeOf(Person);
 console.log(bool);
+
+var nigga = function (){
+
+}
+
+nigga.prototype = new Person();
+
+var little_nigga = new Dog();
+little_nigga.meow();
